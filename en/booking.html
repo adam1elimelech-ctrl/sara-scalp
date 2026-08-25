@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book an Appointment | Sara Scalp – Medical Tattoo Jerusalem</title>
+  <meta name="description" content="Book a consultation or treatment for medical tattoo at Sara Scalp Jerusalem. Phone verification with one-time code. Scar camouflage, SMP and more.">
+  <meta name="keywords" content="book medical tattoo, Sara Scalp appointment, scar camouflage consultation, SMP Jerusalem booking">
+  <link rel="canonical" href="https://sarascalp.co.il/en/booking.html">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="ltr">
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><img src="../images/logo.png" alt="Sara Scalp"></a>
+      <button class="mobile-menu-btn">☰</button>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="scar-camouflage.html">Scar Camouflage</a>
+        <a href="burn-scar.html">Burn Scars</a>
+        <a href="hypopigmentation.html">Hypopigmentation</a>
+        <a href="stretch-birthmark.html">Stretch Marks & Birthmarks</a>
+        <a href="freckles.html">Natural Freckles</a>
+        <a href="cheek-enhancement.html">Cheek Enhancement</a>
+        <a href="scalp-smp.html">Scalp SMP</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="booking.html" class="active">Book Appointment</a>
+      </nav>
+      <div class="header-actions">
+        <a href="../he/booking.html" class="lang-switch">עברית</a>
+        <a href="tel:+972508128665" class="phone-btn">📞 <span>050-812-8665</span></a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Book an Appointment – Sara Scalp</h1>
+      <p class="subtitle">Fill in your details, verify your phone number, and choose a preferred time. We will contact you to confirm.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="booking-form" id="bookingForm">
+        <h2 style="text-align:center; margin-bottom:1.5rem;">Appointment Request Form</h2>
+        
+        <!-- Step 1: Details + Send OTP -->
+        <div id="step1">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" required placeholder="050-000-0000" dir="ltr">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="name@example.com" dir="ltr">
+          </div>
+          <div id="otpMessage" class="form-message"></div>
+          <button type="button" id="sendOtpBtn" class="btn btn-primary" style="width:100%;">Send Verification Code to Phone</button>
+          <p style="font-size:0.85rem; color:var(--gray); margin-top:12px; text-align:center;">A one-time code will be sent for phone verification. In this demo the code is shown on screen. In production it will be replaced with a real SMS service.</p>
+        </div>
+
+        <!-- Step 2: Verify OTP -->
+        <div id="step2" class="otp-section">
+          <div class="form-group">
+            <label for="otp">Enter the verification code (6 digits)</label>
+            <input type="text" id="otp" name="otp" class="otp-input" maxlength="6" placeholder="------" dir="ltr">
+          </div>
+          <button type="button" id="verifyOtpBtn" class="btn btn-primary" style="width:100%;">Verify Code</button>
+        </div>
+
+        <!-- Step 3: Choose service & date -->
+        <div id="step3" class="otp-section" style="display:none;">
+          <div class="form-group">
+            <label for="service">Select Treatment *</label>
+            <select id="service" name="service" required>
+              <option value="">-- Select --</option>
+              <option value="scar">Scar Camouflage</option>
+              <option value="burn">Burn Scar Camouflage</option>
+              <option value="hypo">Hypopigmentation</option>
+              <option value="stretch">Stretch Marks</option>
+              <option value="birthmark">Birthmarks</option>
+              <option value="freckles">Natural Freckles</option>
+              <option value="cheek">Cheek Enhancement</option>
+              <option value="smp">Scalp Micropigmentation (SMP)</option>
+              <option value="consult">General Initial Consultation</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="preferredDate">Preferred Date *</label>
+            <input type="date" id="preferredDate" name="preferredDate" required>
+          </div>
+          <div class="form-group">
+            <label for="notes">Notes / Additional Details</label>
+            <textarea id="notes" name="notes" rows="3" placeholder="Tell us briefly about the area you would like to treat..."></textarea>
+          </div>
+          <div id="formMessage" class="form-message"></div>
+          <button type="button" id="submitBookingBtn" class="btn btn-primary" style="width:100%;">Send Appointment Request</button>
+          <p style="font-size:0.85rem; color:var(--gray); margin-top:14px; text-align:center;">After submitting the request we will contact you to confirm the appointment. Acuity Scheduling calendar will be integrated into the site later.</p>
+        </div>
+      </div>
+
+      <div style="max-width:600px; margin:3rem auto 0; text-align:center;">
+        <h3>Other Ways to Contact Us</h3>
+        <p>📞 <a href="tel:+972508128665">050-812-8665</a><br>
+        💬 <a href="https://wa.me/972508128665" target="_blank">WhatsApp</a><br>
+        ✉️ <a href="mailto:sarascalp@gmail.com">sarascalp@gmail.com</a></p>
+        <p><strong>Opening Hours:</strong> Sun–Thu 09:00–18:00 | Fri & holiday eves 09:00–14:00</p>
+        <p>📍 Hamor 1, Jerusalem</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Sara Scalp</h4><p>Medical tattoo in Jerusalem.</p></div>
+        <div><h4>Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="testimonials.html">Testimonials</a></li></ul></div>
+        <div><h4>Contact</h4><ul><li>📍 Hamor 1, Jerusalem</li><li>📞 <a href="tel:+972508128665">050-812-8665</a></li><li>✉️ <a href="mailto:sarascalp@gmail.com">sarascalp@gmail.com</a></li></ul></div>
+        <div><h4>Hours</h4><p>Sun–Thu 09:00–18:00<br>Fri & holiday eves 09:00–14:00</p></div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 Sara Scalp – Sara Scalp Medical Tattoo Clinic.</p></div>
+    </div>
+  </footer>
+  <a href="https://wa.me/972508128665" class="whatsapp-float" target="_blank">💬</a>
+  <script src="../js/main.js"></script>
+</body>
+</html>
