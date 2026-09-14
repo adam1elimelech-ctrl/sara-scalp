@@ -1,4 +1,22 @@
 (function () {
+
+  const sceneImgs = document.querySelectorAll(".scene img[data-bg]");
+  if (sceneImgs.length) {
+    const sections = document.querySelectorAll("[data-scene]");
+    const pick = () => {
+      let current = "hero";
+      sections.forEach((s) => {
+        const top = s.getBoundingClientRect().top;
+        if (top < window.innerHeight * 0.55) current = s.getAttribute("data-scene");
+      });
+      sceneImgs.forEach((img) => {
+        img.classList.toggle("is-on", img.getAttribute("data-bg") === current);
+      });
+    };
+    window.addEventListener("scroll", pick, { passive: true });
+    pick();
+  }
+
   const btn = document.querySelector("[data-menu]");
   const panel = document.querySelector("[data-panel]");
   if (btn && panel) {
