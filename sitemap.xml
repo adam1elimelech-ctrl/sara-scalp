@@ -1,39 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/en/</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/about.html</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/en/about.html</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/accessibility.html</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/en/accessibility.html</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/birthmarks.html</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/en/birthmarks.html</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/book.html</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/en/book.html</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/burn-scars.html</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/en/burn-scars.html</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/cheek-enhancement.html</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/en/cheek-enhancement.html</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/faq.html</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/en/faq.html</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/freckles.html</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/en/freckles.html</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/gallery.html</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/en/gallery.html</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/hypopigmentation.html</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/en/hypopigmentation.html</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/privacy.html</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/en/privacy.html</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/process.html</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/en/process.html</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/scar-camouflage.html</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/en/scar-camouflage.html</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/smp.html</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/en/smp.html</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/stretch-marks.html</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/en/stretch-marks.html</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/terms.html</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/en/terms.html</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/testimonials.html</loc><changefreq>monthly</changefreq></url>
-  <url><loc>https://YOUR-USER.github.io/sara-scalp/en/testimonials.html</loc><changefreq>monthly</changefreq></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://adam1elimelech-ctrl.github.io/sara-scalp/</loc><changefreq>weekly</changefreq><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="he" href="https://adam1elimelech-ctrl.github.io/sara-scalp/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://adam1elimelech-ctrl.github.io/sara-scalp/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://adam1elimelech-ctrl.github.io/sara-scalp/"/></url>
+  <url><loc>https://adam1elimelech-ctrl.github.io/sara-scalp/en/</loc><changefreq>weekly</changefreq><priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="he" href="https://adam1elimelech-ctrl.github.io/sara-scalp/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://adam1elimelech-ctrl.github.io/sara-scalp/en/"/></url>
+  <url><loc>https://adam1elimelech-ctrl.github.io/sara-scalp/scar-camouflage.html</loc><changefreq>weekly</changefreq><priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="he" href="https://adam1elimelech-ctrl.github.io/sara-scalp/scar-camouflage.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://adam1elimelech-ctrl.github.io/sara-scalp/en/scar-camouflage.html"/></url>
+  <url><loc>https://adam1elimelech-ctrl.github.io/sara-scalp/en/scar-camouflage.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://adam1elimelech-ctrl.github.io/sara-scalp/burn-scars.html</loc><changefreq>weekly</changefreq><priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="he" href="https://adam1elimelech-ctrl.github.io/sara-scalp/burn-scars.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://adam1elimelech-ctrl.github.io/sara-scalp/en/burn-scars.html"/></url>
+  <url><loc>https://adam1elimelech-ctrl.github.io/sara-scalp/en/burn-scars.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://adam1elimelech-ctrl.github.io/sara-scalp/hypopigmentation.html</loc><changefreq>weekly</changefreq><priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="he" href="https://adam1elimelech-ctrl.github.io/sara-scalp/hypopigmentation.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://adam1elimelech-ctrl.github.io/sara-scalp/en/hypopigmentation.html"/></url>
+  <url><loc>https://adam1elimelech-ctrl.github.io/sara-scalp/en/hypopigmentation.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://adam1elimelech-ctrl.github.io/sara-scalp/stretch-marks.html</loc><changefreq>weekly</changefreq><priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="he" href="https://adam1elimelech-ctrl.github.io/sara-scalp/stretch-marks.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://adam1elimelech-ctrl.github.io/sara-scalp/en/stretch-marks.html"/></url>
+  <url><loc>https://adam1elimelech-ctrl.github.io/sara-scalp/en/stretch-marks.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://adam1elimelech-ctrl.github.io/sara-scalp/birthmarks.html</loc><changefreq>weekly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="he" href="https://adam1elimelech-ctrl.github.io/sara-scalp/birthmarks.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://adam1elimelech-ctrl.github.io/sara-scalp/en/birthmarks.html"/></url>
+  <url><loc>https://adam1elimelech-ctrl.github.io/sara-scalp/en/birthmarks.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://adam1elimelech-ctrl.github.io/sara-scalp/smp.html</loc><changefreq>weekly</changefreq><priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="he" href="https://adam1elimelech-ctrl.github.io/sara-scalp/smp.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://adam1elimelech-ctrl.github.io/sara-scalp/en/smp.html"/></url>
+  <url><loc>https://adam1elimelech-ctrl.github.io/sara-scalp/en/smp.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://adam1elimelech-ctrl.github.io/sara-scalp/process.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://adam1elimelech-ctrl.github.io/sara-scalp/en/process.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://adam1elimelech-ctrl.github.io/sara-scalp/about.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://adam1elimelech-ctrl.github.io/sara-scalp/en/about.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://adam1elimelech-ctrl.github.io/sara-scalp/faq.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://adam1elimelech-ctrl.github.io/sara-scalp/en/faq.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://adam1elimelech-ctrl.github.io/sara-scalp/gallery.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://adam1elimelech-ctrl.github.io/sara-scalp/en/gallery.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://adam1elimelech-ctrl.github.io/sara-scalp/testimonials.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://adam1elimelech-ctrl.github.io/sara-scalp/en/testimonials.html</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://adam1elimelech-ctrl.github.io/sara-scalp/book.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://adam1elimelech-ctrl.github.io/sara-scalp/en/book.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>

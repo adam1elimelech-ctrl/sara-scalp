@@ -60,14 +60,29 @@ a{color:inherit}
 .nav a{text-decoration:none;color:var(--ink-soft);white-space:nowrap}
 .nav a:hover,.nav a.active{color:var(--gold-d)}
 .drop{position:relative}
-.drop-menu{
-  display:none;position:absolute;top:120%;inset-inline-start:0;
-  background:var(--paper);border:1px solid var(--line);
-  min-width:230px;padding:10px;border-radius:14px;box-shadow:var(--shadow);
+.drop::after{
+  content:"";
+  position:absolute;
+  inset-inline-start:0;
+  inset-inline-end:0;
+  top:100%;
+  height:22px;
 }
-.drop:hover .drop-menu,.drop:focus-within .drop-menu{display:grid;gap:4px}
-.drop-menu a{padding:8px 10px;border-radius:8px}
-.drop-menu a:hover{background:var(--cream-2)}
+.drop-menu{
+  display:grid;gap:4px;
+  position:absolute;top:calc(100% + 10px);inset-inline-start:0;
+  background:var(--paper);border:1px solid var(--line);
+  min-width:240px;padding:10px;border-radius:14px;box-shadow:var(--shadow);
+  z-index:70;
+  opacity:0;visibility:hidden;pointer-events:none;
+  transform:translateY(8px);
+  transition:opacity .2s ease, transform .2s ease, visibility .2s;
+}
+.drop:hover .drop-menu,
+.drop:focus-within .drop-menu{
+  opacity:1;visibility:visible;pointer-events:auto;transform:none;
+}
+.drop-menu a{padding:10px 12px;border-radius:8px}
 .header-actions{display:flex;align-items:center;gap:8px}
 .lang{
   display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;font-size:13px
@@ -81,6 +96,14 @@ a{color:inherit}
   font-family:var(--sans);cursor:pointer;transition:transform .25s,background .25s;
 }
 .btn:hover{background:var(--gold-l);transform:translateY(-1px)}
+a:focus-visible,button:focus-visible,.drop-menu a:focus-visible{
+  outline:2px solid var(--gold-d);
+  outline-offset:3px;
+}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .scene img,.btn,.drop-menu,.card{transition:none}
+}
 .btn-dark{background:var(--ink);color:var(--cream)}
 .btn-dark:hover{background:#2c2620;color:var(--cream)}
 .btn-line{background:transparent;border:1px solid var(--ink);color:var(--ink)}
@@ -93,8 +116,8 @@ a{color:inherit}
   position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none;
 }
 .scene img{
-  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 18%;
-  opacity:0;transition:opacity .8s ease;
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%;
+  opacity:0;transition:opacity 1.4s ease;
 }
 .scene img.is-on{opacity:1}
 .scene-shade{

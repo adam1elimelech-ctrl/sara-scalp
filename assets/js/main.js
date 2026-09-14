@@ -2,18 +2,32 @@
 
   const sceneImgs = document.querySelectorAll(".scene img[data-bg]");
   if (sceneImgs.length) {
-    const sections = document.querySelectorAll("[data-scene]");
+    const keys = [];
+    sceneImgs.forEach((img) => {
+      const k = img.getAttribute("data-bg");
+      if (k && keys.indexOf(k) === -1) keys.push(k);
+    });
+    let ticking = false;
     const pick = () => {
-      let current = "hero";
-      sections.forEach((s) => {
-        const top = s.getBoundingClientRect().top;
-        if (top < window.innerHeight * 0.55) current = s.getAttribute("data-scene");
-      });
+      const max = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+      const t = Math.min(1, Math.max(0, window.scrollY / max));
+      const start = 0.1;
+      const end = 0.88;
+      let u = 0;
+      if (t > start) u = Math.min(1, (t - start) / (end - start));
+      const idx = Math.min(keys.length - 1, Math.floor(u * keys.length));
+      const current = keys[idx] || keys[0];
       sceneImgs.forEach((img) => {
         img.classList.toggle("is-on", img.getAttribute("data-bg") === current);
       });
+      ticking = false;
     };
-    window.addEventListener("scroll", pick, { passive: true });
+    window.addEventListener("scroll", () => {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(pick);
+      }
+    }, { passive: true });
     pick();
   }
 

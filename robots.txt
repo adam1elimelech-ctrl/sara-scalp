@@ -1,3 +1,7 @@
 User-agent: *
 Allow: /
-Sitemap: https://YOUR-USER.github.io/sara-scalp/sitemap.xml
+Disallow: /freckles.html
+Disallow: /cheek-enhancement.html
+Disallow: /en/freckles.html
+Disallow: /en/cheek-enhancement.html
+Sitemap: https://adam1elimelech-ctrl.github.io/sara-scalp/sitemap.xml
