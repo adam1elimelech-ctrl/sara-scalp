@@ -16,7 +16,8 @@
   --sans:"Assistant", "Heebo", system-ui, sans-serif;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;overflow-x:hidden}
+html,body{max-width:100%;overflow-x:hidden}
 html[lang="he"]{direction:rtl}
 html[lang="en"]{direction:ltr}
 body{
@@ -34,7 +35,12 @@ a{color:inherit}
   position:absolute;left:-999px;top:0;
 }
 .skip:focus{left:12px;background:#fff;padding:8px 12px;z-index:80}
-.wrap{width:min(1180px,calc(100% - 40px));margin-inline:auto}
+.wrap{
+  width:min(1040px,calc(100% - 48px));
+  max-width:1040px;
+  margin-left:auto;
+  margin-right:auto;
+}
 .header{
   position:sticky;top:0;z-index:50;
   background:rgba(246,241,232,.88);
@@ -118,11 +124,20 @@ body.scene-page .footer{position:relative;z-index:1}
   color:var(--ink);
 }
 .panel p, .panel li, .panel .lead, .panel .prose, .panel .copy{color:var(--ink-soft)}
+body.scene-page main{
+  width:100%;
+  max-width:100%;
+  overflow-x:hidden;
+}
 body.scene-page main .wrap{
+  width:min(1040px,calc(100% - 48px));
+  max-width:1040px;
+  margin-left:auto !important;
+  margin-right:auto !important;
   background:#FFFcf7;
   border:1px solid rgba(26,23,20,.08);
   border-radius:28px;
-  padding:32px 34px;
+  padding:28px 30px;
   box-shadow:0 18px 40px rgba(26,23,20,.18);
   color:#1A1714;
 }
@@ -192,8 +207,8 @@ html[lang="he"] .hero-copy{margin-inline-start:auto}
 }
 .photo-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:16px;margin:28px 0}
 .photo-grid img{width:100%;height:280px;object-fit:cover;border-radius:22px}
-.photo-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:28px 0}
-.photo-row img{height:180px;width:100%;object-fit:cover;border-radius:18px}
+.photo-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:28px 0;max-width:100%}
+.photo-row img{height:160px;width:100%;max-width:100%;object-fit:cover;border-radius:18px}
 .article{max-width:820px}
 .article h2{margin-top:36px}
 .article p{margin:0 0 16px}
@@ -229,7 +244,7 @@ h3{font-size:28px}
 html[lang="he"] .split.reverse .media{order:2}
 html[lang="en"] .split.reverse .copy{order:2}
 .media{position:relative}
-.media img{width:100%;height:520px;object-fit:cover;border-radius:var(--radius);box-shadow:var(--shadow)}
+.media img{width:100%;max-width:100%;height:360px;object-fit:cover;border-radius:var(--radius);box-shadow:var(--shadow)}
 .media .badge{
   position:absolute;bottom:18px;inset-inline-start:18px;
   background:rgba(246,241,232,.92);padding:10px 14px;border-radius:12px;font-size:14px
