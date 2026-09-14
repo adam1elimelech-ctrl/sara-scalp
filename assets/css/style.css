@@ -368,12 +368,55 @@ html[lang="en"] .split.reverse .copy{order:2}
 .gallery figure{margin:0;background:var(--paper);border-radius:18px;overflow:hidden;border:1px solid var(--line)}
 .gallery figcaption{padding:12px 14px;font-size:14px;color:var(--muted)}
 @media (max-width:980px){
-  .nav,.header-actions .btn-phone{display:none}
-  .hamburger{display:block;margin-inline-start:auto}
+  html,body{width:100%;max-width:100%;overflow-x:hidden}
+  .nav,.header-actions .btn-phone,.header-actions .btn{display:none}
+  .hamburger{display:block;margin-inline-start:8px}
+  .header-inner{
+    width:100%;
+    max-width:100%;
+    margin:0;
+    padding:8px 12px;
+    gap:8px;
+    min-height:58px;
+    box-sizing:border-box;
+  }
+  .logo-mark{font-size:20px;letter-spacing:.12em}
+  .logo-sub{display:none}
+  .lang a{padding:5px 8px}
   .trust,.cards,.quotes,.steps,.footer-grid,.split,.split.reverse,.gallery,.photo-grid,.photo-row{grid-template-columns:1fr}
   html[lang="he"] .split.reverse .media,html[lang="en"] .split.reverse .copy{order:0}
-  .media img{height:320px}
-  .hero{min-height:78vh}
+  .media img{height:220px}
+  .hero{min-height:70vh}
+  .wrap,
+  body.scene-page main .wrap,
+  body.scene-page main .wrap.split,
+  body.scene-page main .wrap.panel{
+    width:calc(100% - 24px) !important;
+    max-width:calc(100% - 24px) !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+    padding:18px 16px;
+    box-sizing:border-box;
+  }
+  body.scene-page main .wrap{
+    background:transparent;
+    border:0;
+    box-shadow:none;
+    padding:0;
+  }
+  .card-block,.panel{
+    padding:18px 16px;
+    border-radius:20px;
+    margin-bottom:14px;
+  }
+  .page-hero{padding:16px 0 8px}
+  .section{padding:16px 0}
+  h1{font-size:1.7rem;line-height:1.25}
+  h2{font-size:1.25rem}
+  .photo-row{grid-template-columns:1fr 1fr;gap:8px}
+  .photo-row img{height:120px}
+  .steps{grid-template-columns:1fr 1fr}
+  .float-wa{width:52px;height:52px;inset-inline-end:12px;bottom:12px}
 }
 @media (prefers-reduced-motion:reduce){
   .reveal{animation:none;opacity:1;transform:none}
