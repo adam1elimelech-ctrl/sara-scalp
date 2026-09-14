@@ -1,13 +1,21 @@
 (function () {
 
+  const scene = document.querySelector(".scene");
   const sceneImgs = document.querySelectorAll(".scene img[data-bg]");
-  if (sceneImgs.length) {
+  if (scene && sceneImgs.length) {
     const keys = [];
+    const urls = {};
     sceneImgs.forEach((img) => {
       const k = img.getAttribute("data-bg");
-      if (k && keys.indexOf(k) === -1) keys.push(k);
+      if (!k) return;
+      if (keys.indexOf(k) === -1) keys.push(k);
+      urls[k] = img.currentSrc || img.getAttribute("src");
     });
     let ticking = false;
+    const paint = (key) => {
+      const url = urls[key] || urls[keys[0]];
+      if (url) scene.style.backgroundImage = 'url("' + url + '")';
+    };
     const pick = () => {
       const max = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
       const t = Math.min(1, Math.max(0, window.scrollY / max));
@@ -15,20 +23,16 @@
       const end = 0.88;
       let u = 0;
       if (t > start) u = Math.min(1, (t - start) / (end - start));
-      const idx = Math.min(keys.length - 1, Math.floor(u * keys.length));
-      const current = keys[idx] || keys[0];
-      sceneImgs.forEach((img) => {
-        img.classList.toggle("is-on", img.getAttribute("data-bg") === current);
-      });
+      paint(keys[Math.min(keys.length - 1, Math.floor(u * keys.length))] || keys[0]);
       ticking = false;
     };
-    window.addEventListener("scroll", () => {
+    paint(keys[0]);
+    window.addEventListener("scroll", function () {
       if (!ticking) {
         ticking = true;
         requestAnimationFrame(pick);
       }
     }, { passive: true });
-    pick();
   }
 
   const btn = document.querySelector("[data-menu]");
