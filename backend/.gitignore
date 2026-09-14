@@ -1,0 +1,6 @@
+sara.db
+uploads/
+last-notify.txt
+mail-error.txt
+__pycache__/
+.env

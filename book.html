@@ -55,9 +55,10 @@
 
 <section class="page-hero"><div class="wrap"><div class="kicker">ייעוץ ראשון בלי התחייבות</div><h1>קביעת תור</h1></div></section>
 <section class="section alt"><div class="wrap"><div class="prose"><p>מלאו את הטופס ונפתח וואטסאפ עם הפרטים. אפשר גם להתקשר או להגיע לפי תיאום להמור 1, ירושלים.</p></div>
-<form class="form" data-wa-form>
+<form class="form" data-lead-form data-wa-form>
   <label>שם מלא<input name="name" required></label>
   <label>טלפון<input name="phone" required></label>
+  <label>מייל (לשליחת אישור)<input type="email" name="email"></label>
   <label>טיפול
     <select name="service">
       <option>הסוואת צלקות</option><option>כוויות</option><option>היפופיגמנטציה</option>
@@ -65,8 +66,15 @@
       <option>הדגשת לחיים</option><option>SMP</option>
     </select>
   </label>
+  <label>מועד מבוקש
+    <select name="slot" data-slot></select>
+  </label>
+  <label>תמונת האזור לייעוץ (לא חובה)
+    <input type="file" name="photo" accept="image/jpeg,image/png,image/webp">
+  </label>
   <label>הודעה<textarea name="message" rows="4" placeholder="אפשר לתאר את האזור בקצרה"></textarea></label>
-  <button class="btn" type="submit">שליחה לוואטסאפ</button>
+  <button class="btn" type="submit">שמירת פנייה + וואטסאפ</button>
+  <p>הפנייה נשמרת אצל הקליניקה ונשלחת גם ל־sarascalp@gmail.com ולוואטסאפ 050-812-8665.</p>
   <p>או חייגו <a href="tel:+972508128665">050-812-8665</a> · המור 1, ירושלים</p>
 </form>
 </div></section>
@@ -103,6 +111,8 @@
   <div class="wrap legal"><span>© 2026 Sara Scalp Jerusalem</span><span><a href="privacy.html">פרטיות</a> · <a href="accessibility.html">נגישות</a> · <a href="terms.html">תנאים</a></span></div>
 </footer>
 <a class="float-wa" href="https://wa.me/972508128665" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/config.js"></script>
 <script src="assets/js/main.js" defer></script>
 
 </body>
